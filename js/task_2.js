@@ -2,14 +2,9 @@
 
 
 //Task-2
-const calculateEngravingPrice = function(message, pricePerWord) {
-    let total = 0;
-    const arrayWords = message.split(" ");
-    for (const word of arrayWords) {
-        total += pricePerWord;
-    }
-    return total;
-}
+const calculateEngravingPrice = (message, pricePerWord) => {
+    return message.split(" ").length * pricePerWord; 
+};
 
 console.log(calculateEngravingPrice("I won't wait for you to come around", 10));
 console.log(calculateEngravingPrice("Be or not to be", 520));
