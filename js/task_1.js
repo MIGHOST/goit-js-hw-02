@@ -2,12 +2,6 @@
 
 // //Task-1
 
-// let logItems = ['Mango', 'Poly', 'Ajax', 'Lux', 'Jay', 'Kong'];
-// logItems.forEach(function(item, index) {
-//     console.table( `${index + 1} ${item}`);
-//   });
-
-
 const logItems = arr => {
     for (let i = 0; i < arr.length; i++) {
       console.log(`${i + 1} - ${arr[i]}`);
